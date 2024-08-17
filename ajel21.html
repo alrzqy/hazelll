@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR AJEL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        .landing {
+            text-align: center;
+            padding: 150px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .landing h1 {
+            font-size: 60px;
+            margin: 0;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .landing p {
+            font-size: 24px;
+            margin: 10px 0;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        .landing button {
+            padding: 15px 30px;
+            font-size: 20px;
+            background: #ff69b4;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background 0.3s;
+            animation: fadeIn 5s ease-in-out;
+        }
+
+        .landing button:hover {
+            background: #ff1493;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .story {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .timeline {
+            margin: 0 auto;
+            max-width: 1200px;
+            position: relative;
+            padding: 20px;
+        }
+
+        .event {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-container img {
+            width: 300px;
+            height: auto;
+            margin: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .video-container video {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .message-form {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .message-form textarea {
+            width: 100%;
+            height: 120px;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .message-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #ff69b4;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .message-form button:hover {
+            background: #ff1493;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Landing Page -->
+    <div class="landing">
+        <h1>Welcome To For Ajell</h1>
+        <p>Explore the beautiful person about you.</p>
+        <button onclick="scrollToSection('story')">Start</button>
+    </div>
+
+    <!-- Love Story Section -->
+    <div id="story" class="section story">
+        <h2> ABOUT AJEL</h2>
+        <div class="timeline">
+            <div class="event">
+                <h3>Pengakuan Keindahan</h3>
+                <p> Saya mengakui dan menghargai keindahan sebagai sesuatu yang sangat beragam dan subjektif. Keindahan tidak hanya terletak pada penampilan fisik, tetapi juga pada kualitas dan karakter seseorang yang bernama ajel</p>
+            </div>
+            <div class="event">
+                <h3>Penghargaan terhadap Kecantikan</h3>
+                <p>Saya percaya bahwa setiap individu memiliki keindahan unik mereka sendiri. Dalam konteks ini, saya ingin menyatakan bahwa AJEL ALIAS INCESS memiliki kecantikan yang tidak hanya tampak dari luar, tetapi juga dari dalam. </p>
+            </div>
+            <div class="event">
+                <h3>Kecantikan sebagai Kualitas</h3>
+                <p>Kecantikan yang dimiliki oleh AJELL ALIAS INCESS adalah hasil dari sikap positif, kepribadian yang menyenangkan, serta kualitas baik yang dimilikinya. Ini adalah bentuk kecantikan yang patut dihargai dan diapresiasi.</p>
+            </div>
+            <!-- Add more events -->
+        </div>
+    </div>
+
+    <!-- Multimedia Gallery -->
+    <div id="gallery" class="section gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="ajel6.jpg" alt="dia" onclick="openLightbox(this)">
+            <img src="ajel7.jpg" alt="dia" onclick="openLightbox(this)">
+            <img src="ajel8.jpg" alt=" dia" onclick="openLightbox(this)">
+            <!-- Add more images -->
+        </div>
+    </div>
+
+    <!-- Messages Section -->
+    <div id="messages" class="section messages">
+        <h2>Special Messages For ajel</h2>
+        <div class="message-form">
+            <textarea placeholder="Write a message..."></textarea>
+            <button onclick="sendMessage()">Send Message</button>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div id="video" class="section video-container">
+        <h2>Special Video</h2>
+        <video controls>
+            <source src="ajel3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Created with all my best love</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openLightbox(image) {
+            const lightbox = document.createElement('div');
+            lightbox.style.position = 'fixed';
+            lightbox.style.top = '0';
+            lightbox.style.left = '0';
+            lightbox.style.width = '100%';
+            lightbox.style.height = '100%';
+            lightbox.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            lightbox.style.display = 'flex';
+            lightbox.style.justifyContent = 'center';
+            lightbox.style.alignItems = 'center';
+            lightbox.style.cursor = 'pointer';
+            lightbox.onclick = function() {
+                document.body.removeChild(lightbox);
+            };
+
+            const img = document.createElement('img');
+            img.src = image.src;
+            img.style.maxWidth = '90%';
+            img.style.maxHeight = '90%';
+            img.style.border = '5px solid #fff';
